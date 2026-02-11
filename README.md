@@ -3,6 +3,8 @@ Docker Compose setup for OpenELIS-Global2
 
 You can find more information on how to set up OpenELIS at our [docs page](http://docs.openelis-global.org/)
 
+**For developers:** See [Development Environment Setup](docs/dev-environment-setup.md) for instructions on setting up your local dev environment.
+
 [![Build Status](https://github.com/I-TECH-UW/OpenELIS-Global-2/actions/workflows/ci.yml/badge.svg)](https://github.com/I-TECH-UW/OpenELIS-Global-2/actions/workflows/ci.yml)
 
 [![Publish Docker Image Status](https://github.com/I-TECH-UW/OpenELIS-Global-2/actions/workflows/publish-and-test.yml/badge.svg)](https://github.com/I-TECH-UW/OpenELIS-Global-2/actions/workflows/publish-and-test.yml)
