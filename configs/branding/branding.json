@@ -1,0 +1,23 @@
+{
+  "logo": {
+    "src": "/branding/nhsl_logo.png",
+    "alt": "National Hospital of Sri Lanka"
+  },
+  "colors": {
+    "primary": "#003366",
+    "secondary": "#FFD700",
+    "accent": "#CC0000"
+  },
+  "organization": {
+    "name": "National Hospital of Sri Lanka",
+    "nameSinhala": "ශ්‍රී ලංකා ජාතික රෝහල",
+    "nameTamil": "இலங்கை தேசிய வைத்தியசாலை",
+    "address": "Regent Street, Colombo 00700, Sri Lanka",
+    "phone": "+94 11 269 1111"
+  },
+  "theme": {
+    "headerColor": "#003366",
+    "footerColor": "#f5f5f5",
+    "linkColor": "#003366"
+  }
+}

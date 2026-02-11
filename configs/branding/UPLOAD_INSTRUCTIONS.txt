@@ -1,0 +1,64 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   National Hospital of Sri Lanka - Logo Upload Instructions  ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+STEP 1: Save the Logo Image
+────────────────────────────────────────────────────────────────
+
+  Right-click on the National Hospital logo image (shown above)
+  and save it to your computer.
+
+STEP 2: Upload to Server
+────────────────────────────────────────────────────────────────
+
+  Upload the logo file to the server at this EXACT location:
+
+    /home/openelis/openelis-docker/configs/branding/nhsl_logo.png
+
+  IMPORTANT: The filename MUST be exactly: nhsl_logo.png
+
+  Ways to upload:
+
+  A) Using SCP from your computer:
+     scp nhsl-logo.png openelis@10.51.44.100:/home/openelis/openelis-docker/configs/branding/nhsl_logo.png
+
+  B) Using SFTP client (FileZilla, WinSCP, etc.)
+     - Connect to: 10.51.44.100
+     - Navigate to: /home/openelis/openelis-docker/configs/branding/
+     - Upload and rename to: nhsl_logo.png
+
+  C) Using VS Code file upload:
+     - Open the folder: /home/openelis/openelis-docker/configs/branding/
+     - Drag and drop the file
+     - Rename to: nhsl_logo.png
+
+STEP 3: Run the Setup Script
+────────────────────────────────────────────────────────────────
+
+  Once the logo is uploaded, run:
+
+    bash /home/openelis/openelis-docker/configs/branding/setup-branding.sh
+
+  The script will:
+  ✓ Verify the logo file exists
+  ✓ Backup existing OpenELIS logos
+  ✓ Install National Hospital logo
+  ✓ Apply branding configuration
+  ✓ Display success message
+
+STEP 4: View the Results
+────────────────────────────────────────────────────────────────
+
+  1. Open browser: http://10.51.44.100/
+  2. Press Ctrl+Shift+R to hard refresh
+  3. See the National Hospital logo on login page!
+
+────────────────────────────────────────────────────────────────
+
+For detailed documentation, see:
+  /home/openelis/openelis-docker/BRANDING_SETUP.md
+
+Quick check if logo is in place:
+  ls -lh /home/openelis/openelis-docker/configs/branding/nhsl_logo.png
