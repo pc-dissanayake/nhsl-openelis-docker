@@ -157,7 +157,7 @@ services:
         tty: true
 
     proxy:
-        image: itechuw/openelis-global-2-proxy:develop
+        image: nginx:1.25-alpine
         container_name: openelisglobal-proxy
         # platform: linux/amd64
         ports:
